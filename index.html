@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lead Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WJ7QJXMJ');</script>
+    <!-- End Google Tag Manager -->
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Lead Form</h2>
+
+        <form id="leadForm">
+            <input type="text" required placeholder="Your Name">
+            <input type="email" required placeholder="Your Email">
+            <input type="tel" required placeholder="Your Phone">
+            <textarea placeholder="Your Message"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <button class="call-btn" onclick="callMe()">Call Me</button>
+
+        <p class="phone">
+            📞 <a href="tel:018710855" onclick="trackPhoneClick()">018710855</a>
+        </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
